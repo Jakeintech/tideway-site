@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jakeintech.github.io/tideway-site/sitemap.xml
