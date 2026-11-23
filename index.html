@@ -3,19 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tideway: Harbor Traffic — draw the lanes, run the harbor</title>
-<meta name="description" content="A one-finger harbor game for iPhone. Drag a lane from a gate to a berth and the ship follows it. Every lane you draw stays.">
+<title>Tideway: Harbor Traffic — a one-finger harbour game for iPhone</title>
+<meta name="description" content="Ships keep arriving. Every lane you draw stays. Tideway is a one-finger harbour game: drag a lane from a gate to a berth and the ship follows it, for as long as the lane is there. Free, one $3.99 unlock, no ads.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F7FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1B2A" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/icon.png">
-<link rel="canonical" href="https://jakeintech.github.io/tideway-site/index.html">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="canonical" href="https://jakeintech.github.io/tideway-site/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tideway: Harbor Traffic — draw the lanes, run the harbor">
-<meta property="og:description" content="A one-finger harbor game for iPhone. Drag a lane from a gate to a berth and the ship follows it. Every lane you draw stays.">
+<meta property="og:site_name" content="Tideway: Harbor Traffic">
+<meta property="og:title" content="Tideway: Harbor Traffic">
+<meta property="og:description" content="Ships keep arriving. Every lane you draw stays. A one-finger harbour game for iPhone and iPad.">
 <meta property="og:image" content="https://jakeintech.github.io/tideway-site/assets/og.png">
-<meta property="og:url" content="https://jakeintech.github.io/tideway-site/index.html">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A drawing of a night harbour from above: lit sea lanes running from gates to coral, azure and amber berths.">
+<meta property="og:url" content="https://jakeintech.github.io/tideway-site/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tideway: Harbor Traffic">
+<meta name="twitter:description" content="Ships keep arriving. Every lane you draw stays. A one-finger harbour game for iPhone and iPad.">
+<meta name="twitter:image" content="https://jakeintech.github.io/tideway-site/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;800&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
 {
@@ -23,7 +34,7 @@
   "@type": "VideoGame",
   "name": "Tideway: Harbor Traffic",
   "alternateName": "Tideway",
-  "description": "Draw sea lanes from the gates to the berths. Every lane you draw stays, so the network you build is the problem you have to solve.",
+  "description": "Ships keep arriving and every lane you draw stays. Drag a lane from a gate to a berth and the ship follows it. Branch it, merge it, build a network, and live with the network you built.",
   "image": "https://jakeintech.github.io/tideway-site/assets/og.png",
   "url": "https://jakeintech.github.io/tideway-site/",
   "applicationCategory": "GameApplication",
@@ -31,6 +42,7 @@
   "operatingSystem": "iOS 18.0 or later",
   "gamePlatform": ["iPhone", "iPad"],
   "playMode": "SinglePlayer",
+  "author": { "@type": "Person", "name": "Jake Williams" },
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Tideway" },
     { "@type": "Offer", "price": "3.99", "priceCurrency": "USD", "name": "Tideway Plus" }
@@ -39,84 +51,186 @@
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap">
-  <img src="assets/icon.png" alt="">
-  <strong>Tideway</strong>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="support.html">Support</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap site-head">
+  <a class="brand" href="./" aria-label="Tideway home"><img src="assets/icon.png" alt="" width="34" height="34">Tideway</a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="#how">How it plays</a>
+    <a href="#giveway">Right of way</a>
+    <a href="#week">The week</a>
+    <a href="#price">Price</a>
     <a href="press.html">Press</a>
-    <a href="privacy-policy.html">Privacy</a>
+    <a href="support.html">Support</a>
   </nav>
-</div></header>
+</header>
 
-<main>
-<section class="hero"><div class="wrap">
-  <div>
-    <p class="eyebrow">iPhone and iPad</p>
-    <h1>Draw the lanes.<br>Run the harbor.</h1>
-    <p class="lede">Ships arrive at the gates. Drag a lane to a berth and they follow it &mdash; and every lane you draw stays.</p>
-    <div class="badges">
-      <a class="btn" href="#how">How it plays</a>
-      <a class="btn secondary" href="press.html">Press kit</a>
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="label">Tideway: Harbor Traffic</p>
+      <h1 id="hero-title"><span class="line">Ships keep arriving.</span> <span class="line">Every lane you</span> <span class="line">draw stays.</span></h1>
+      <p class="lede">Drag a lane from a gate to a berth and the ship follows it — and so does the next one, and the one after that. A day lasts <span class="nb">three minutes</span>. You play with one finger.</p>
+      <div class="cta">
+        <a class="btn" href="#how">See how it plays</a>
+        <a class="btn ghost" href="press.html">Press kit</a>
+      </div>
+      <p class="fine">Coming to the App Store. Free to download, with one optional unlock at $3.99. No ads, with or without it. No subscriptions, no accounts. iPhone and iPad, iOS 18 or later.</p>
     </div>
-    <p class="note" style="margin-top:20px">Coming to the App Store. Free, with one $3.99 unlock. No ads, ever &mdash; paid or free.</p>
+    <figure>
+      <div class="art-frame"><img src="assets/harbour.svg" width="1200" height="625" alt="A drawing of a night harbour seen from above. Lit sea lanes run from four gates at the edges to three quay berths marked coral, azure and amber. Container ships follow them, one held at a ringed crossing while another crosses, and a lorry and a train carry boxes inland."></div>
+      <figcaption>An illustration, not a screenshot.</figcaption>
+    </figure>
   </div>
-  <video src="assets/loop.mp4" autoplay muted loop playsinline aria-label="Tideway gameplay"></video>
-</div></section>
+</section>
 
-<section class="land"><div class="wrap">
-  <h2>Flight Control, except every lane you draw stays</h2>
-  <div class="shots">
-    <img src="assets/01_draw_lanes.png" alt="A finger drawing a sea lane from a gate to a berth on a grown harbor network" width="1320" height="2868" loading="lazy">
-    <img src="assets/02_give_way.png" alt="Two ships approaching a crossing, one giving way" width="1320" height="2868" loading="lazy">
-    <img src="assets/04_flick_cargo.png" alt="A container flicked out of a full yard toward its exit" width="1320" height="2868" loading="lazy">
+<section aria-label="Tideway in numbers">
+  <div class="wrap">
+    <ul class="stats">
+      <li class="stat"><span class="lab">Harbours</span><span class="num">3</span></li>
+      <li class="stat"><span class="lab">Named days</span><span class="num">7</span></li>
+      <li class="stat"><span class="lab">Minute days</span><span class="num">3</span></li>
+      <li class="stat"><span class="lab">Lane kinds</span><span class="num">3</span></li>
+      <li class="stat"><span class="lab">Upgrades</span><span class="num">7</span></li>
+    </ul>
   </div>
-</div></section>
+</section>
 
-<section id="how"><div class="wrap">
-  <h2>How it plays</h2>
-  <ol class="steps">
-    <li><div><h3>Drag from a gate to a berth</h3><p>The waiting ship follows the lane. Lanes snap to straight and 45&deg; runs, so the network reads at a glance.</p></div></li>
-    <li><div><h3>Branch and merge</h3><p>Drag from a point on a lane to reach a second berth, or from another gate into a lane you already have. Ships route through the graph.</p></div></li>
-    <li><div><h3>Clear the yards</h3><p>Cranes unload into the yard. Draw roads from the exits and rail from the rail head, or flick a box out by hand when a yard fills.</p></div></li>
-    <li><div><h3>Keep the whole chain moving</h3><p>A full yard stops the crane, which blocks the berth, which queues the gate. Three ships turned away and the run is over.</p></div></li>
-  </ol>
-</div></section>
-
-<section class="land"><div class="wrap">
-  <h2>What makes it tense</h2>
-  <div class="grid">
-    <div class="card"><h3>Every jam is yours</h3><p>Ships only follow lanes you drew. When something blocks, you can point at the line that caused it.</p></div>
-    <div class="card"><h3>Real harbor rules</h3><p>At a crossing, the ship with the other on its starboard side gives way. Tap the crossing to take harbor control.</p></div>
-    <div class="card"><h3>Every day cuts across you</h3><p>A second gate, a third cargo, rail, box ships carrying six, storm cells that close lanes, rush hour. Never just faster.</p></div>
-    <div class="card"><h3>One of three, every day</h3><p>A truck, a faster crane, a bigger yard, an overpass, more ink, a tug. No currency, no random rewards.</p></div>
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title">Three things, and that is the game</h2>
+    <p class="sub">There is one verb. You draw. Everything else is what the harbour does with what you drew.</p>
+    <div class="cards three">
+      <div class="card">
+        <span class="step">1</span>
+        <h3>Draw a lane</h3>
+        <p>Drag from a gate to a berth. The ship waiting at that gate follows the lane, and so does every ship that arrives there afterwards. Branch it to a second berth, merge it into one you already have.</p>
+      </div>
+      <div class="card">
+        <span class="step">2</span>
+        <h3>Watch it fill</h3>
+        <p>Cranes lift the boxes off. They stack in the yard behind the berth, and a road or a rail line carries them inland. A yard that fills up stops the crane, and the ship behind it waits.</p>
+      </div>
+      <div class="card">
+        <span class="step">3</span>
+        <h3>Fix it while it runs</h3>
+        <p>Press and hold a lane to take it out and get the ink back. Flick a box straight out of a full yard with a short swipe. Quick flicks in a row chain for a bonus.</p>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section><div class="wrap">
-  <div class="stats">
-    <div><span class="n">3 min</span><span class="l">a day</span></div>
-    <div><span class="n">1</span><span class="l">finger</span></div>
-    <div><span class="n">0</span><span class="l">tutorial screens</span></div>
-    <div><span class="n">$3.99</span><span class="l">one unlock, no subscription</span></div>
+<section class="section" id="giveway" aria-labelledby="giveway-title">
+  <div class="wrap">
+    <h2 id="giveway-title">Two ships, one crossing, a real rule</h2>
+    <p class="sub">Where two of your lanes cross, the ships use the rule actual ships use: the one with the other on its starboard side gives way. A pill appears on the crossing with an arrow showing who goes.</p>
+    <div class="cards two">
+      <div class="card">
+        <h3>Or overrule it</h3>
+        <p>Tap the pill to take harbour control and the crossing flips: the ship that was holding goes, the one that was going holds. The pill turns blue so you can see every crossing you are managing by hand.</p>
+      </div>
+      <div class="card">
+        <h3>It is a choice, not a chore</h3>
+        <p>Give way costs seconds. A crossing you never touch is a crossing that resolves itself correctly and slowly. The question is which ones are worth your thumb while the clock runs.</p>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section class="land"><div class="wrap">
-  <h2>Tideway Plus</h2>
-  <p class="prose">One purchase, $3.99. It adds two more harbors &mdash; Two Rivers and Old Port &mdash; unlocks Free Harbor mode with no strikes, and gives you a reroll of the upgrade cards at the end of every day. No subscriptions, no coins, nothing random. Tideway has no ads, with or without it.</p>
-</div></section>
+<section class="section" id="week" aria-labelledby="week-title">
+  <div class="wrap">
+    <h2 id="week-title">Seven days, then it stops being polite</h2>
+    <p class="sub">Each day is three minutes and brings one new thing. Pick one of three upgrade cards at the end of each. Three strikes end the run.</p>
+    <div class="days">
+      <div class="day"><span class="n">Day 1</span><h3>Opening day</h3><ul class="tags"><li>Coral cargo</li><li>West gate</li></ul></div>
+      <div class="day"><span class="n">Day 2</span><h3>Box ships and rail</h3><ul class="tags"><li>Box ships carry 6</li><li>Rail at 1:00 in</li></ul></div>
+      <div class="day"><span class="n">Day 3</span><h3>Amber and a third gate</h3><ul class="tags"><li>Amber cargo</li><li>Northwest gate opens</li><li>+300 sea ink</li></ul></div>
+      <div class="day"><span class="n">Day 4</span><h3>Busy tides</h3><ul class="tags"><li>Ships arrive faster</li></ul></div>
+      <div class="day"><span class="n">Day 5</span><h3>Storm day</h3><ul class="tags"><li>Storm cells close the lanes they cover</li></ul></div>
+      <div class="day"><span class="n">Day 6</span><h3>Rush hour</h3><ul class="tags"><li>Arrivals 20% faster</li></ul></div>
+      <div class="day"><span class="n">Day 7</span><h3>Last tide</h3><ul class="tags"><li>Rush and storms together</li></ul></div>
+      <div class="day overtime"><span class="n">Day 8 and on</span><h3>Overtime</h3><ul class="tags"><li>Arrivals keep speeding up</li><li>Runs until the third strike</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="read" aria-labelledby="read-title">
+  <div class="wrap">
+    <h2 id="read-title">Colour is never the only thing telling you</h2>
+    <p class="sub">Four cargoes, four colours, four shapes. The shape is on the container, on the berth pad, on the depot badge and on the ship. Tideway passes a greyscale playtest, which is a test the project actually runs.</p>
+    <div class="cargo">
+      <div class="kind">
+        <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="var(--coral)"/></svg>
+        <div class="name">Coral</div><div class="where">Circle</div>
+      </div>
+      <div class="kind">
+        <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="2" width="30" height="30" rx="7" fill="var(--azure)"/></svg>
+        <div class="name">Azure</div><div class="where">Square</div>
+      </div>
+      <div class="kind">
+        <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 2 L33 31 H1 Z" fill="var(--amber)"/></svg>
+        <div class="name">Amber</div><div class="where">Triangle</div>
+      </div>
+      <div class="kind">
+        <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 1 L33 17 L17 33 L1 17 Z" fill="var(--mint)"/></svg>
+        <div class="name">Mint</div><div class="where">Diamond</div>
+      </div>
+    </div>
+    <p class="fine">Every control has a VoiceOver label, the interface scales with Dynamic Type, and Reduce Motion is honoured. The game plays in full with Game Center switched off.</p>
+  </div>
+</section>
+
+<section class="section" id="screens" aria-labelledby="screens-title">
+  <div class="wrap">
+    <h2 id="screens-title">The real thing</h2>
+    <p class="sub">These are screenshots, captured from play at fixed seeds so they can be taken again.</p>
+    <div class="shots">
+      <img src="assets/01_draw_lanes.png" alt="A lane drawn from the west gate to the coral berth, with a ship following it." loading="lazy" width="330" height="716">
+      <img src="assets/02_give_way.png" alt="Two lanes crossing, with the give-way pill showing which ship holds." loading="lazy" width="330" height="716">
+      <img src="assets/04_flick_cargo.png" alt="A box being flicked out of a full yard toward its road exit." loading="lazy" width="330" height="716">
+      <img src="assets/05_upgrades.png" alt="The end of a day, with three upgrade cards to pick from." loading="lazy" width="330" height="716">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="price" aria-labelledby="price-title">
+  <div class="wrap">
+    <h2 id="price-title">What it costs</h2>
+    <div class="price">
+      <h3>Free, and one unlock at $3.99</h3>
+      <p>Tideway shows no ads to anyone, paid or free, and links no ad network. Tideway Plus is a single purchase, not a subscription.</p>
+      <ul>
+        <li>Two more harbours: Two Rivers and Old Port.</li>
+        <li>Free Harbour: play on with no strikes.</li>
+        <li>A reroll of the three upgrade cards at the end of each day.</li>
+      </ul>
+      <p class="fine">Restore Purchases is on the Plus sheet and in Settings. No account, no login, no backend — everything is stored on the device.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="wrap">
+    <h2 id="closing-title">The harbour you built is the harbour you have.</h2>
+    <div class="cta" style="justify-content:center">
+      <a class="btn" href="press.html">Press kit</a>
+      <a class="btn ghost" href="support.html">Support</a>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer class="site"><div class="wrap">
-  <span>Tideway &middot; &copy; 2026 Denvered</span>
-  <nav>
-    <a href="index.html">Home</a>
+
+<footer class="wrap site-foot">
+  <nav aria-label="Footer">
     <a href="support.html">Support</a>
     <a href="press.html">Press kit</a>
     <a href="privacy-policy.html">Privacy policy</a>
     <a href="terms-of-service.html">Terms</a>
   </nav>
-</div></footer>
+  <p>Tideway: Harbor Traffic. Made by Jake Williams. The harbour drawing on this page is an illustration, not a screenshot.</p>
+</footer>
 </body>
 </html>
